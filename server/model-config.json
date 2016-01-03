@@ -30,9 +30,13 @@
   },
   "Role": {
     "dataSource": "databasePostIt",
-    "public": false
+    "public": true
   },
-  "user": {
+  "Member": {
+    "dataSource": "databasePostIt",
+    "public": true
+  },
+  "Board": {
     "dataSource": "databasePostIt",
     "public": true
   }

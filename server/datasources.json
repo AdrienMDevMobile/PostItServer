@@ -1,12 +1,8 @@
-/*
-    Pour rechercher dans la bdd : use dbPI
-    db.User.find(); 
-*/
 {
- "databasePostIt": {
+  "databasePostIt": {
+    "database": "dbPI",
     "name": "databasePostIt",
-    "connector": "mongodb",
-    "database": "dbPI"
+    "connector": "mongodb"
   },
   "db": {
     "name": "db",

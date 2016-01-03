@@ -1,0 +1,32 @@
+{
+  "name": "Board",
+  "plural": "Boards",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "creation_date": {
+      "type": "number"
+    },
+    "is_public": {
+      "type": "boolean",
+      "required": true,
+      "default": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "users": {
+      "type": "hasAndBelongsToMany",
+      "model": "Member"
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

@@ -1,6 +1,6 @@
 {
-  "name": "user",
-  "plural": "users",
+  "name": "Member",
+  "plural": "Members",
   "base": "User",
   "idInjection": true,
   "options": {
@@ -8,7 +8,12 @@
   },
   "properties": {},
   "validations": [],
-  "relations": {},
+  "relations": {
+    "boards": {
+      "type": "hasAndBelongsToMany",
+      "model": "Board"
+    }
+  },
   "acls": [],
   "methods": {}
 }
